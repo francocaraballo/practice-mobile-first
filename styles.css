@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    background-color: #C12526;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav .container_logo {
+    width: 100%;
+}
+
+.container_logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    padding: 7px 5px;
+}
+
+
+
+ul .li_icon {
+    color: rgb(236, 231, 231);
+}
+
+ul .li_text {
+    display: none;
+} 
+
+/* Main section */
+
+h2 {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.line {
+    width: 100px;
+    border: 1px solid black;
+    margin: 10px auto;
+
+}
+
+.section_img {
+    max-height: 470px;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.section_img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* Footer styles */
+
+
+footer {
+    padding: 20px 10px;
+    background-color: #DBDBDB;
+    font-size: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > div {
+    width: 105px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.fine_line {
+    width: 50px;
+    border: 1px solid #595959;
+    margin: 10px 0;
+}
+
+footer div h4 {
+    margin-bottom: 6px;
+    font-weight: 400;
+}
+
+footer li {
+    margin-bottom: 3px;
+}
+
+.footer_created_by {
+    display: block;
+    color: rgb(236, 231, 231);
+    background-color: rgb(1, 145, 255);
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.footer_created_by h5 {
+    font-size: .5rem;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    nav .container_logo {
+        width: auto;
+        order: 2;
+    }
+
+    nav .ul_left {
+        order: 1;
+    }
+
+    nav .ul_right {
+        order: 3
+    }
+    
+    nav ul {
+        width: auto;
+    }
+
+    ul .li_text {
+        display: inline-block;
+        margin: 0 20px;
+        color: rgb(236, 231, 231);
+    }
+
+    ul .li_icon {
+        display: none;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .fine_line {
+        transform: rotate(90deg);
+    }
+}
